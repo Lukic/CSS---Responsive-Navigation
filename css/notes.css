@@ -47,10 +47,19 @@ nav {
   background-color: rgba(87, 108, 216, 1);
 }
 
+/* Skjuler alle knapper */
+
 #toggle-nav,
 #toggle-nav-btn-open,
 #toggle-nav-btn-close {
   display: none;
+}
+
+/* styling af knapper */
+#toggle-nav-btn-open,
+#toggle-nav-btn-close {
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 1);
 }
 
 @media screen and (max-width: 768px) {
@@ -69,27 +78,26 @@ nav {
     z-index: -1;
   }
 
+  /* Viser menu vec checkrd. */
   #toggle-nav:checked ~ #nav-links {
     display: block;
     opacity: 1;
     left: 0;
   }
 
+  /* Viser burger menu */
   #toggle-nav-btn-open {
     display: inline-block;
   }
 
+  /* Viser luk knappen */
   #toggle-nav:checked ~ label #toggle-nav-btn-close {
     display: inline-block;
   }
+
+  /* Skjuler burger menu når menuen er åben. */
   #toggle-nav:checked ~ label #toggle-nav-btn-open {
     display: none;
-  }
-
-  #toggle-nav-btn-open,
-  #toggle-nav-btn-close {
-    font-size: 4rem;
-    color: rgba(255, 255, 255, 1);
   }
 }
 

@@ -53,6 +53,12 @@ nav {
   display: none;
 }
 
+#toggle-nav-btn-open,
+#toggle-nav-btn-close {
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 1);
+}
+
 @media screen and (max-width: 768px) {
   #nav-links {
     position: absolute;
@@ -82,14 +88,9 @@ nav {
   #toggle-nav:checked ~ label #toggle-nav-btn-close {
     display: inline-block;
   }
+
   #toggle-nav:checked ~ label #toggle-nav-btn-open {
     display: none;
-  }
-
-  #toggle-nav-btn-open,
-  #toggle-nav-btn-close {
-    font-size: 4rem;
-    color: rgba(255, 255, 255, 1);
   }
 }
 
