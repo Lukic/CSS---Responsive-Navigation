@@ -90,6 +90,11 @@ nav {
     display: inline-block;
   }
 
+  /*
+  Mac: ~  = Option + ^
+  Pc: ~ =   Alt + 247
+  */
+
   /* Viser luk knappen */
   #toggle-nav:checked ~ label #toggle-nav-btn-close {
     display: inline-block;
