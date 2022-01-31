@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -6,11 +8,16 @@
 
 html {
   font-size: 62.5%;
+}
+
+body {
   font-family: "Roboto", sans-serif;
 }
 
 nav {
+  max-width: 1100px;
   height: 80px;
+  margin: 0 auto;
   padding: 0 2em;
   background-color: rgba(46, 71, 204, 1);
   display: flex;
@@ -68,15 +75,12 @@ nav {
     top: 80px;
     left: -100%;
     background-color: rgba(46, 71, 204, 1);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     box-shadow: 5px 0px 20px rgba(26, 43, 129, 1);
     z-index: -1;
+    display: block;
   }
 
   #toggle-nav:checked ~ #nav-links {
-    display: block;
     opacity: 1;
     left: 0;
   }
@@ -85,12 +89,12 @@ nav {
     display: inline-block;
   }
 
-  #toggle-nav:checked ~ label #toggle-nav-btn-close {
-    display: inline-block;
-  }
-
   #toggle-nav:checked ~ label #toggle-nav-btn-open {
     display: none;
+  }
+
+  #toggle-nav:checked ~ label #toggle-nav-btn-close {
+    display: inline-block;
   }
 }
 
